@@ -37,3 +37,8 @@ https://drive.google.com/file/d/0B47NDHSkjCPyNzZTR09ETTRFZzA/view?usp=sharing
 - ast
 - tqdm
 - operator
+- numpy
+- pandas
+- scipy
+- sklearn
+
