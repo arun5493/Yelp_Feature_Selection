@@ -15,3 +15,25 @@ https://drive.google.com/file/d/0B47NDHSkjCPyNzZTR09ETTRFZzA/view?usp=sharing
 - models.r : Code for correlation, Ordinal regression and Mulitnomial regression.
 - ann_ratings.r : Code for Aritificial neural network for rating prediction. 
 - svm_lr_ratings.r : Code for Support vector Machine and Linear Regression
+
+
+#### R Packages Required : 
+- glmnet
+- corrplot
+- caret
+- mlogit
+- foreign
+- MASS
+- reshape2
+- stats
+- neuralnet
+- nnet
+- e1071
+
+#### Python Libraries Required:
+- json
+- csv
+- unicodedata
+- ast
+- tqdm
+- operator
