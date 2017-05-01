@@ -1,13 +1,13 @@
 # install.packages("e1071")
-
+# install.packages("kernlab")
 library(e1071)
+library(kernlab)
 # read the yelp dataset
 setwd("C:/Users/Arun/Documents/NCSU MS/BI/Capstone")
 yelpData <- read.csv("processed_data.csv")
 
 # Get information about the dataset
 str(yelpData)
-yelpData$title_year = as.factor(yelpData$title_year)
 
 # separate the numeric data columns from the Factor(string) data columns
 
@@ -31,7 +31,7 @@ yelp_numeric_new <- na.omit(yelp_numeric)
 dat <- data.frame(lapply(yelp_numeric_new, function(x) scale(x, center = FALSE, scale = max(x, na.rm = TRUE))))
 
 #Retaining the stars in the given range .i.e 0-5
-dat$stars = yelp_numeric_new$stars / 5  
+dat$stars = yelp_numeric_new$stars  
 
 #split the data in to trainset and test set
 dat = data.frame(dat)
@@ -51,9 +51,8 @@ prediction = predict(lm1, testset[,-2])
 mse <- mean((testset$stars - prediction)^2)
 print(mse)
 
-
 ####################################### SUPPORT VECTOR MACHINES USING KERNEL #####################################
-svm1 = ksvm(stars ~., data = trainset,kernel="rbfdot")
+svm1<-svm(stars ~., data = trainset)
 summary(svm1)
 # Apply the model on the testset and get the predicted values
 prediction = predict(svm1, testset[,-2],type="response")
