@@ -29,6 +29,7 @@ https://drive.google.com/file/d/0B47NDHSkjCPyNzZTR09ETTRFZzA/view?usp=sharing
 - neuralnet
 - nnet
 - e1071
+- kvTools
 
 #### Python Libraries Required:
 - json
