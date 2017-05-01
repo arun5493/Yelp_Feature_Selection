@@ -13,7 +13,6 @@ yelpData <- read.csv("processed_data.csv")
 # Get information about the dataset
 
 str(yelpData)
-yelpData$title_year = as.factor(yelpData$title_year)
 
 # separate the numeric data columns from the Factor(string) data columns
 
