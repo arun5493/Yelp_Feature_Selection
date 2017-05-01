@@ -21,25 +21,6 @@ def parse_data(source1,output_path):
 	# close the reader
 	f.close()
 
-	#print business_data[1].keys()
-
-	# allCategoriesList = []
-	# for entry in tqdm(range(0, len(business_data))):
-	# 	categoryList = [] 
-	# 	categoryList.append(business_data[entry]['categories'])
-	# 	#print categoryList[0]
-	# 	if categoryList[0] is not None:
-	# 		for each in categoryList[0]:
-	# 			allCategoriesList.append(each)
-
-	# categoriesCount = {}
-	# for each in allCategoriesList:
-	# 	if each not in categoriesCount.keys():
-	# 		categoriesCount[each] = 0
-	# 	categoriesCount[each]+=1
-	# sorted_x = sorted(categoriesCount.items(), key=operator.itemgetter(1))
-	#print sorted_x
-
 
 	print('processing data in the business dataset...')
     # for every entry in the business data array
