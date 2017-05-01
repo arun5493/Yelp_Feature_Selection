@@ -10,7 +10,7 @@ https://drive.google.com/file/d/0B47NDHSkjCPyNzZTR09ETTRFZzA/view?usp=sharing
 - Clone this repository
 - Download the dataset from the above mentioned google drive
 - First run preprocess.py using the command: python preprocess.py
-- The above file will generate a processed_data.csv. This file is being used by other R and python files.
+- The above file will generate a processed_data.csv. This file is being used by other R and python files. For convenience the processed_data.csv is already added to the repository.
 - featureSelection_Modelling.py : Code for feature selection.
 - models.r : Code for correlation, Ordinal regression and Mulitnomial regression.
 - ann_ratings.r : Code for Aritificial neural network for rating prediction. 
